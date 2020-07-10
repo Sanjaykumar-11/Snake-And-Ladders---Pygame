@@ -1,0 +1,91 @@
+pygame.time.Clock
+create an object to help track time
+
+
+pygame.display.update()
+allows only a portion of the screen to updated, instead of the entire area.
+
+
+pygame.image.load
+load new image from a file
+
+
+pygame.mixer.music.load()
+Load a music file for playback
+
+
+pygame.mixer.Sound
+Create a new Sound object from a file or buffer object
+
+
+pygame.mouse.get_pos()
+get the mouse cursor position
+get_pos() -> (x, y)
+
+
+pygame.mouse.get_pressed()
+get the state of the mouse buttons
+get_pressed() -> (button1, button2, button3)
+
+
+pygame.font.Font
+create a new Font object from a file
+
+
+pygame.time.get_ticks()
+get the time in milliseconds
+get_ticks() -> milliseconds
+
+
+pygame.draw.rect()
+draw a rectangle
+rect(surface, color, rect) -> Rect
+rect(surface, color, rect, width=0, border_radius=0, border_radius=-1, border_top_left_radius=-1, border_top_right_radius=-1, border_bottom_left_radius=-1) -> Rect
+Draws a rectangle on the given surface.
+
+
+pygame.mixer.Sound.play
+begin sound playback
+
+
+pygame.quit()
+uninitialize all pygame modules
+quit() -> None
+Uninitialize all pygame modules that have previously been initialized. When the Python interpreter shuts down,
+this method is called regardless, so your program should not need it, except when it wants to terminate its pygame resources and continue. 
+It is safe to call this function more than once as repeated calls have no effect.
+
+
+blit()
+draw one image onto another
+blit(source, dest, area=None, special_flags=0) -> Rect
+
+
+pygame.event.get()
+get events from the queue
+get(eventtype=None) -> Eventlist
+get(eventtype=None, pump=True) -> Eventlist
+
+
+The pygame.eventpygame module for interacting with events and queues queue gets pygame.KEYDOWN and pygame.KEYUP events when the keyboard buttons are pressed and released. Both events have key and mod attributes.
+
+
+key: an integer ID representing every key on the keyboard
+mod: a bitmask of all the modifier keys that were in a pressed state when the event occurred
+The pygame.KEYDOWN event has the additional attributes unicode and scancode.
+
+
+unicode: a single character string that is the fully translated character entered, this takes into account the shift and composition keys
+scancode: the platform-specific key code, which could be different from keyboard to keyboard, but is useful for key selection of weird keys like the multimedia keys
+
+
+pygame.key
+pygame module to work with the keyboard
+
+
+pygame.K_ESCAPE
+It denotes a event of pressing escape button.
+
+
+pygame.tick()
+Update the clock.
