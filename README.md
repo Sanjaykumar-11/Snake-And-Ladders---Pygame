@@ -1,3 +1,7 @@
-System requirements:
-python 3 and pygame module should be installed.
+System requirements: Python3 with Pygame module.
+
+To install pygame, type below in command prompt...
+
+pip install pygame
+
 
